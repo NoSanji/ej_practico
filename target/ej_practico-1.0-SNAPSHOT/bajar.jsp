@@ -3,7 +3,6 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
-<%@page import = "java.sql.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,13 +12,11 @@
     <body>
         <%
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/ej_practico"
-            ,"root", "");
+            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/ej_practico","root", "");
             Statement s = conexion.createStatement();
             request.setCharacterEncoding("UTF-8");
-            String insercion = "INSERT INTO `tb_productos`(`pd_nombre`,`pd_descrip`,`pd_precio`) VALUES('"+request.getParameter("nombre")+"','"+request.getParameter("descripcion")+"',"+request.getParameter("costo")+");";
+            String insercion = "UPDATE tb_productos_sucursales SET ps_stock= 0 WHERE id_sucursal="+request.getParameter("sucursal")+" AND id_producto="+request.getParameter("id")+";";
             s.execute(insercion);
-            s.execute("INSERT INTO `tb_productos_sucursales`(`id_sucursal`,`id_producto`,`ps_stock`) VALUES("+request.getParameter("producto")+","+request.getParameter("sucursal")+","+request.getParameter("stock")+");");
             conexion.close();
         
         %>

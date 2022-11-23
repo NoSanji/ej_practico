@@ -4,7 +4,7 @@ CRAETE DATABASE `EJ_PRACTICO`
 //Crea Tablas
 CREATE TABLE `tb_productos`
 (
- `id_producto` int NOT NULL ,
+ `id_producto` int NOT NULL AUTO_INCREMENT,
  `pd_nombre`   varchar(50) NOT NULL ,
  `pd_descrip`  varchar(100) NOT NULL ,
  `pd_precio`   int(6) NOT NULL ,
@@ -16,12 +16,8 @@ CREATE TABLE `tb_productos_sucursales`
  `id_sucursal` int NOT NULL ,
  `id_producto` int NOT NULL ,
  `ps_stock`    int(6) NOT NULL ,
-
-KEY `FK_2` (`id_producto`),
-CONSTRAINT `FK_1` FOREIGN KEY `FK_2` (`id_producto`) REFERENCES `tb_productos` (`id_producto`),
-KEY `FK_2_1` (`id_sucursal`),
-CONSTRAINT `FK_2` FOREIGN KEY `FK_2_1` (`id_sucursal`) REFERENCES `tb_sucursales` (`id_sucursal`)
 );
+
 CREATE TABLE `tb_sucursales`
 (
  `id_sucursal`  int NOT NULL ,

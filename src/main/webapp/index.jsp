@@ -15,20 +15,20 @@
         <div>
           <h2>Sede San Juan</h2>
           <a href="carga.jsp?id_sucursal=1">carga</a>
-          <a href="baja.jsp?id_sucursal?=1">baja</a>
-          <a href="muestra.jsp?id_sucursal?=1">muestra</a>
+          <a href="baja.jsp?id_sucursal=1">baja</a>
+          <a href="muestra.jsp?id_sucursal=1">muestra</a>
         </div>
         <div>
           <h2>Sede San Junin</h2>
-          <a href="carga.jsp?id_sucursal?=2">carga</a>
-          <a href="baja.jsp?id_sucursal?=2">baja</a>
-          <a href="muestra.jsp?id_sucursal?=2">muestra</a>
+          <a href="carga.jsp?id_sucursal=2">carga</a>
+          <a href="baja.jsp?id_sucursal=2">baja</a>
+          <a href="muestra.jsp?id_sucursal=2">muestra</a>
         </div>
         <div>
           <h2>Sede San Justo</h2>
-          <a href="carga.jsp?id_sucursal?=3">carga</a>
-          <a href="baja.jsp?id_sucursal?=3">baja</a>
-          <a href="muestra.jsp?id_sucursal?=3">muestra</a>
+          <a href="carga.jsp?id_sucursal=3">carga</a>
+          <a href="baja.jsp?id_sucursal=3">baja</a>
+          <a href="muestra.jsp?id_sucursal=3">muestra</a>
         </div>
     </body>
 </html>
