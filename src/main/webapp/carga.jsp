@@ -11,7 +11,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form>
+        <form method="get" action="cargar.jsp">
             <h2>Ingrese nombre</h2>
             <input name="nombre">
             <h2>Ingrese descripcion</h2>
